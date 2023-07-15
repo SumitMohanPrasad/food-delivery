@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cart</title>
+</head>
+<body>
+
+    <div id="logout"></div>
+    <div id="goToOrderHistory"></div>
+
+    <label>Choose a filter by food
+        <select id="foodChoices">
+        <option value='default'>---Choose a Food---</option></select>
+    </label>
+    <button onclick="displayRestaurantByFood()">Sort Restaurant by Food</button>
+    <br>
+
+
+    <label>Choose a filter by location
+        <select id="locationChoices">
+        <option value='default'>---Choose a location---</option></select>
+    </label>
+    <button onclick="displayRestaurantByLocation()">Sort Restaurant by location</button>
+    <br>
+
+    <label>Choose a Restaurant
+        <select id="restoSelect">
+            <option value="0">----choose a resto----</option>
+        </select>
+    </label> 
+  <button onclick="displayFood()">Display Food</button><br><br>
+  <label>select food item</label><br><br>
+  <div id="food-list">Food Items</div>
+  <h2>Cart</h2>
+  <div id="cart-container"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="script.js"> </script>
+</body>
+</html>

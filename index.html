@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Signup</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <div>
+        <input type="text" id="emailLogin" placeholder="Email id"><br>
+        <input type="password" id="passwordLogin" placeholder="Password"><br>
+        <button onclick="login()">Login</button>
+    </div> 
+
+    <h1>Forgot Password</h1>
+    <div>
+        <input type="text" id="forgotPassEmailId" placeholder="Email id"><br>
+        <input type="text" id="forgotPassPhoneNumber" placeholder="Phone Number"><br>
+        <input type="password" id="newPassword" placeholder="Password"><br>
+        <button onclick="forgetPass()">Forget Password</button><br>
+    </div> 
+
+    <h1>Signup</h1>
+    <div>
+        <input type="text" id= "fullName" placeholder="Full Name" ><br>
+        <input type="email" id="email" placeholder="Email Id"><br>
+        <input type="number" id="phoneNumber"  placeholder="Phone Number"><br>
+        <input type="password" id="password" placeholder="password"><br>
+        <button type="submit" onclick="signup()">Signup</button>     
+    </div><br>
+    
+       <label>Choose a Restaurant
+           <select id="restoSelect">
+               <option value="0">----choose a resto----</option>
+           </select>
+       </label> 
+     <button onclick="displayFood()">Display Food</button><br><br>
+     <label>select food item</label><br><br>
+     <div id="food-list">Food Items</div>
+     <h2>Cart</h2>
+     <div id="cart-container"></div><br>
+
+     <h2>Order History</h2>
+     <div id="orderHistoryContanier"></div>
+     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <script src="script.js"> </script>
+       
+</body>
+</html>

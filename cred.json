@@ -1,0 +1,33 @@
+[
+    {
+        "restaurantName":"Delhi Resto",
+        "details":{
+            "address":"sector 10",
+            "contact":32424,
+            "rating":"4star"
+        },
+        "foodItems":{
+            "veg":[
+                {
+                    "id":1,
+                    "name":"rice",
+                    "price":150,
+                    "quantity":"200gm"
+                },{
+                    "id":2,
+                    "name":"daal",
+                    "price":200,
+                    "quantity":"150gm"
+                }
+            ],
+            "non-veg":[
+                {
+                    "id":3,
+                    "name":"fish",
+                    "price":150,
+                    "quantity":"200gm"
+                }
+            ]
+        }
+    }
+]
